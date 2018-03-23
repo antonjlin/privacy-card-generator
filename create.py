@@ -92,7 +92,7 @@ def main():
 		payload1 = {
 			"reloadable":'true',
 			"spendLimitDuration":"MONTHLY",
-			"memo": 'CardGen ' + str(i),
+			"memo": cardName + ' ' + str(i + 1),
 			"meta":{"hostname":""},
 			"style":'null'}
 
@@ -118,11 +118,11 @@ def init():
 	global num
 	global email
 	global passw
-
+	global cardName
 	num = int(input('Number of cards to create: '))
 	email = input("Privacy account email ")
 	passw = input("Privacy account password: ")
-
+	cardName = input('Card name: ')
 	os.remove("cards.txt")
 	f = open("cards.txt", "w+")
 	f.close()
