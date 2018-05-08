@@ -15,4 +15,4 @@ A script to generate multiple Privacy credit cards
 ## Credits
 - Written by Anton Lin. 
 - Twitter: @thesolecop
-
+- Help: @ehxohd on twitter
